@@ -1,0 +1,77 @@
+body{
+    background-color: blue;
+}
+
+.login-box{
+    width: 400px;
+    text-align: center;
+    background-color: black;
+    color: white;
+top: 25%;
+left: 25%;
+    position: absolute;
+    padding-bottom: 20px;
+}
+.login-box .user-box{
+    position: relative;
+}
+.user-box{
+    padding: 20px;
+}
+button{
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    outline: none;
+}
+button:hover{
+    background-color: #4444;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+.login-box .user-box label{
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    padding: 0px 30px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.login-box .user-box input:valid ~ label,
+.login-box .user-box input:focus ~ label{
+    top: 3px;
+    color: aqua;
+    font-size: 13px;
+}
+
+span{
+    position: relative;
+    top: -25px;
+    left: -140px;
+    color: red;
+    font-size: 14px;
+}
+.login-box .user-box input.err{
+    border-bottom: 1px solid red;
+}
+.login-box .user-box input.err2{
+    border-bottom: 1px solid red;
+}
+.login-box .user-box input.valid{
+    border-bottom: 1px solid #0f4;
+    color: none;
+}
